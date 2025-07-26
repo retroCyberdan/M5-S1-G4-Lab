@@ -12,10 +12,10 @@ using System.Linq;
 public class VirtualCameraSwitcher : MonoBehaviour
 {
     [SerializeField] private List<CinemachineVirtualCamera> _virtualCameras;
-    [SerializeField] private int _activeCameraIndex = 0;
     [SerializeField] private KeyCode _keyCodeForSwitchOn = KeyCode.D; // <- tasto da premere per switchare alla camera successiva
     [SerializeField] private KeyCode _keyCodeForSwitchBack = KeyCode.A; // <- tasto da premere per tornare alla camera precedente
-
+    
+    private int _activeCameraIndex = 0;
     private int _defaultPriority = 10;
     private int _activePriority = 11;
 
